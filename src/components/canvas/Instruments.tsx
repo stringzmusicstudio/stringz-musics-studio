@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { Float, useGLTF } from "@react-three/drei";
 
@@ -18,20 +18,18 @@ const premiumMaterial = new THREE.MeshPhysicalMaterial({
 export function GuitarModel() {
 
   const { scene } = useGLTF("/models/guitar.glb");
-  const centeredScene = useMemo(() => {
-  const clone = scene.clone(true);
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const centeredModel = useMemo(() => {
+    const clone = scene.clone(true);
+    const box = new THREE.Box3().setFromObject(clone);
+    const center = box.getCenter(new THREE.Vector3());
+    const sphere = box.getBoundingSphere(new THREE.Sphere());
 
-  const box = new THREE.Box3().setFromObject(clone);
-  const center = box.getCenter(new THREE.Vector3());
+    clone.position.sub(center);
 
-  clone.position.sub(center);
-
-  return clone;
-}, [scene]);
-  scene.position.set(0, 0, 0);
+    return { clone, center, radius: sphere.radius };
+  }, [scene]);
   const groupRef = useRef<THREE.Group>(null);
-  const floatRef = useRef<THREE.Group>(null);
-  
   const rotationY = useRef(0);
 
   const [hovered, setHovered] = useState(false);
@@ -78,14 +76,12 @@ groupRef.current.rotation.z = 0;
 });
 return (
   <group position={[0, 0, 0]}>
-   <group ref={groupRef}>
-    
-      {/* Makes the original model stand upright */}
+    <group ref={groupRef}>
       <group rotation={[-0.18, 0, Math.PI / 2]}>
         <primitive
-          object={centeredScene}
-          scale={0.34}
-          position={[0, 0, 0]}
+          object={centeredModel.clone}
+          scale={isMobile ? 0.33 : 1.8 / centeredModel.radius}
+          position={[0, isMobile ? -0.1 : 0, 0]}
         />
       </group>
     </group>
@@ -94,6 +90,7 @@ return (
 }
 export function DrumModel() {
   const { scene } = useGLTF("/models/drums.glb");
+  const { viewport } = useThree();
   const groupRef = useRef<THREE.Group>(null);
 const rotationY = useRef(0);
 
@@ -128,8 +125,8 @@ const rotationY = useRef(0);
     >
       <primitive
         object={centeredScene}
-        scale={4.5}
-        position={[0, -1.3, 0]}
+        scale={viewport.width < 5 ? 11.2 : 3.4}
+        position={[0, viewport.width < 5 ? -0.65 : -1, 0]}
         rotation={[0, -Math.PI / 5, 0]}
       />
     </Float>
@@ -138,18 +135,19 @@ const rotationY = useRef(0);
 }
 export function KeyboardModel() {
   const { scene } = useGLTF("/models/keyboard.glb");
+  const { viewport } = useThree();
   const groupRef = useRef<THREE.Group>(null);
 const rotationY = useRef(0);
 
-  const centeredScene = useMemo(() => {
+  const centeredModel = useMemo(() => {
     const clone = scene.clone(true);
-
     const box = new THREE.Box3().setFromObject(clone);
     const center = box.getCenter(new THREE.Vector3());
+    const sphere = box.getBoundingSphere(new THREE.Sphere());
 
     clone.position.sub(center);
 
-    return clone;
+    return { clone, radius: sphere.radius };
   }, [scene]);
   useFrame(() => {
   if (!groupRef.current) return;
@@ -170,9 +168,9 @@ const rotationY = useRef(0);
 >
       <group ref={groupRef}>
   <primitive
-  object={centeredScene}
-  scale={2.2}
- position={[0, 0.2, 0]}
+  object={centeredModel.clone}
+  scale={viewport.width < 5 ? 4 : 2.1 / centeredModel.radius}
+ position={[0, viewport.width < 5 ? -0.15 : 0.2, 0]}
  rotation={[0, 0, 0]}
 />
 </group>

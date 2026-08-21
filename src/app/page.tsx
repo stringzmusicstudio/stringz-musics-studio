@@ -244,7 +244,7 @@ useEffect(() => {
           {/* Placeholders for future sections to allow scrolling */}
      <section
   id="guitar"
- className="relative flex h-[110vh] w-full items-center overflow-hidden px-6"
+ className="relative flex h-[110vh] w-full items-center overflow-hidden px-6 max-[767px]:h-auto max-[767px]:min-h-0 max-[767px]:px-5 max-[767px]:py-[5.5rem]"
 >
 {/* GUITAR BACKGROUND */}
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -262,10 +262,10 @@ useEffect(() => {
   <div className="absolute bottom-[-150px] right-[4%] h-[320px] w-[760px] rounded-full bg-amber-500/15 blur-[120px]" />
 
   {/* Left gold LED */}
-  <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
+  <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706] max-[767px]:hidden min-[768px]:left-[57%]" />
 
   {/* Right gold LED */}
-  <div className="absolute right-[6%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
+  <div className="absolute right-[24%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706] max-[767px]:hidden min-[768px]:right-[13%]" />
 
   {/* Contact shadow under guitar */}
   <div className="absolute bottom-[11%] left-[73%] h-[38px] w-[425px] -translate-x-1/2 rounded-full bg-black/60 blur-[30px]" />
@@ -276,7 +276,7 @@ useEffect(() => {
 
 </div>
   <div
-  className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2"
+  className="z-10 mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2"
   data-scroll-section
 >
    <div data-scroll-speed="0.25">
@@ -284,7 +284,7 @@ useEffect(() => {
         Guitar
       </p>
 
-     <h2 className="mt-6 whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
+    <h2 className="mt-6 max-[767px]:max-w-full max-[767px]:whitespace-normal max-[767px]:break-words max-[767px]:text-[clamp(2.5rem,12vw,3.25rem)] whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
   Craft Your Sound.
 </h2>
 
@@ -302,8 +302,12 @@ useEffect(() => {
 
   <div
   data-scroll-model
-  className="relative h-[560px] w-full overflow-visible lg:h-[650px]"
+  className="relative max-[767px]:mt-5 h-[560px] w-full overflow-visible max-[767px]:h-[280px] max-[767px]:min-h-[280px] max-[767px]:translate-y-0 max-[767px]:scale-100 max-[767px]:overflow-visible min-[768px]:absolute min-[768px]:left-[calc(57%+3px)] min-[768px]:right-[calc(13%+3px)] min-[768px]:top-1/2 min-[768px]:h-[650px] min-[768px]:w-auto min-[768px]:-translate-y-1/2 min-[768px]:z-10"
 >
+  <div className="pointer-events-none absolute inset-0 max-[767px]:block min-[768px]:hidden">
+    <div className="absolute left-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
+    <div className="absolute right-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
+  </div>
   <Scene />
 </div>
   </div>
@@ -320,7 +324,7 @@ useEffect(() => {
 {/* DRUMS */}
 <section
   id="drums"
- className="relative grid h-[110vh] grid-cols-1 items-center overflow-hidden px-8 md:px-16 lg:grid-cols-2 lg:px-24"
+ className="relative grid h-[110vh] grid-cols-1 items-center overflow-hidden px-8 max-[767px]:h-auto max-[767px]:min-h-0 max-[767px]:px-5 max-[767px]:py-[5.5rem] md:px-16 lg:grid-cols-2 lg:px-24"
 >
   {/* Full drums background */}
   <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -341,10 +345,10 @@ useEffect(() => {
     <div className="absolute bottom-[-160px] right-[4%] h-[320px] w-[760px] rounded-full bg-blue-500/15 blur-[120px]" />
 
     {/* Left blue LED */}
-    <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb]" />
+    <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb] max-[767px]:hidden min-[768px]:left-[57%]" />
 
     {/* Right blue LED */}
-    <div className="absolute right-[6%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb]" />
+    <div className="absolute right-[6%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb] max-[767px]:hidden min-[768px]:right-[13%]" />
 
    {/* Shadow under drums */}
 <div
@@ -375,7 +379,7 @@ useEffect(() => {
       DRUMS
     </p>
 
-    <h2 className="mt-6 whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
+    <h2 className="mt-6 max-[767px]:max-w-full max-[767px]:whitespace-normal max-[767px]:break-words max-[767px]:text-[clamp(2.5rem,12vw,3.25rem)] whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
      Feel the Groove.
     </h2>
 
@@ -391,7 +395,11 @@ useEffect(() => {
   </div>
 
   {/* Drum model */}
-  <div className="relative z-10 h-[520px] w-full overflow-visible lg:h-[620px]">
+  <div className="relative z-10 max-[767px]:mt-5 h-[520px] w-full overflow-visible max-[767px]:h-[280px] max-[767px]:min-h-[280px] max-[767px]:translate-y-0 max-[767px]:overflow-visible lg:h-[620px]">
+    <div className="pointer-events-none absolute inset-0 max-[767px]:block min-[768px]:hidden">
+      <div className="absolute left-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb]" />
+      <div className="absolute right-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-blue-100 shadow-[0_0_12px_#dbeafe,0_0_28px_#60a5fa,0_0_60px_#2563eb]" />
+    </div>
     <DrumScene />
   </div>
   <a
@@ -406,7 +414,7 @@ useEffect(() => {
 {/* KEYBOARD */}
 <section
   id="keyboard"
-  className="relative grid h-[110vh] grid-cols-1 items-center overflow-hidden bg-black px-8 md:px-16 lg:grid-cols-2 lg:px-24"
+  className="relative grid h-[110vh] grid-cols-1 items-center overflow-hidden bg-black px-8 max-[767px]:h-auto max-[767px]:min-h-0 max-[767px]:px-5 max-[767px]:py-[5.5rem] md:px-16 lg:grid-cols-2 lg:px-24"
 >
   {/* Full cinematic background */}
   <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -433,9 +441,9 @@ useEffect(() => {
     <div className="absolute bottom-[-80px] right-[5%] h-[260px] w-[760px] rounded-[50%] bg-purple-500/18 blur-[80px]" />
 
     {/* Side neon bars */}
-    <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce]" />
+    <div className="absolute left-[50%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce] max-[767px]:hidden min-[768px]:left-[57%]" />
 
-    <div className="absolute right-[6%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce]" />
+    <div className="absolute right-[35%] top-1/2 h-[250px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce] max-[767px]:hidden min-[768px]:right-[13%]" />
 
     {/* Dark vignette */}
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_68%_48%,transparent_22%,rgba(0,0,0,0.88)_88%)]" />
@@ -446,7 +454,7 @@ useEffect(() => {
     <p className="mb-8 text-base font-semibold tracking-[0.3em] text-yellow-400">
       KEYBOARD
     </p>
-<h2 className="mt-6 whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
+<h2 className="mt-6 max-[767px]:max-w-full max-[767px]:whitespace-normal max-[767px]:break-words max-[767px]:text-[clamp(2.5rem,12vw,3.25rem)] whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
      Unlock Every Note.
     </h2>
 
@@ -462,7 +470,11 @@ useEffect(() => {
   </div>
 
   {/* Keyboard stage */}
-  <div className="relative z-10 order-1 h-[520px] w-full overflow-visible lg:order-2 lg:h-[620px]">
+  <div className="relative z-10 order-1 max-[767px]:mt-5 h-[320px] w-full overflow-visible max-[767px]:order-2 max-[767px]:h-[280px] max-[767px]:min-h-[280px] max-[767px]:translate-y-0 max-[767px]:overflow-visible lg:order-2 lg:h-[620px]">
+    <div className="pointer-events-none absolute inset-0 max-[767px]:block min-[768px]:hidden">
+      <div className="absolute left-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce]" />
+      <div className="absolute right-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-violet-200 shadow-[0_0_12px_#e9d5ff,0_0_28px_#c084fc,0_0_60px_#7e22ce]" />
+    </div>
 
     {/* Soft shadow under keyboard */}
     <div className="pointer-events-none absolute bottom-[15%] left-1/2 h-[80px] w-[500px] -translate-x-1/2 rounded-[50%] bg-black/80 blur-[30px]" />
@@ -627,7 +639,7 @@ useEffect(() => {
       </h2>
 
       <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-neutral-400">
-        Every student's journey at Stringz is carefully planned—from your first free
+        Every student&apos;s journey at Stringz is carefully planned—from your first free
         trial to performing confidently on stage through structured learning and
         consistent practice.
       </p>
@@ -1064,7 +1076,7 @@ useEffect(() => {
           quote:
             "My daughter is learning guitar in Stringz for more than a year now. Best in guitar education with highly dedicated faculty. The environment at Stringz is always exciting for the students. My daughter thoroughly enjoys her time at Stringz and we are seeing her growth with guitar. Awesome place, awesome teachers.",
           name: "Amita Sahoo",
-          role: "3 years ago",
+          role: "1 year ago",
         },
         {
           quote:

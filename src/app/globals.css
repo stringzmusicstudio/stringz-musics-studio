@@ -35,6 +35,155 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  nav > div {
+    min-height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  nav img {
+    height: 34px;
+    width: 34px;
+  }
+
+  nav a span {
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.875rem;
+  }
+
+  #guitar,
+  #drums,
+  #keyboard {
+    min-height: 100svh;
+    height: 100svh;
+    overflow: hidden;
+    padding: 88px 20px 56px;
+  }
+
+  #guitar > [data-scroll-section] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #guitar h2,
+  #drums h2,
+  #keyboard h2 {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    font-size: clamp(2.5rem, 12vw, 3.25rem);
+    line-height: 0.98;
+  }
+
+  #guitar p,
+  #drums p,
+  #keyboard p {
+    max-width: 100%;
+  }
+
+  #guitar > [data-scroll-section] > div:first-child,
+  #drums > div[data-scroll-content],
+  #keyboard > div.order-2 {
+    min-width: 0;
+    padding-bottom: 12px;
+  }
+
+  #guitar [data-scroll-model],
+  #drums > div.relative.z-10,
+  #keyboard > div.order-1 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 280px;
+    min-height: 280px;
+    overflow: visible;
+  }
+
+  #keyboard > div.order-2 {
+    order: 1;
+  }
+
+  #keyboard > div.order-1 {
+    order: 2;
+  }
+
+  #guitar > a,
+  #drums > a,
+  #keyboard > a {
+    bottom: 16px;
+  }
+
+  #why-stringz,
+  #experience,
+  #gallery,
+  #reviews,
+  #visit,
+  #book {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #gallery {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  #gallery h2,
+  #reviews h2 {
+    font-size: clamp(2rem, 10vw, 2.75rem);
+  }
+
+  #gallery .group {
+    height: 292px;
+  }
+
+  #gallery .group > div:first-child,
+  #gallery .group > div:nth-child(2) {
+    left: 12px;
+    right: 12px;
+  }
+
+  #gallery .group > div:nth-child(3) {
+    left: 4px;
+    right: 4px;
+  }
+
+  #visit .flex.items-center.justify-between {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #book form {
+    padding: 16px;
+  }
+
+  #book button {
+    width: 100%;
+  }
+
+  footer > div:last-child {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
