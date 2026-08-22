@@ -17,7 +17,7 @@ const premiumMaterial = new THREE.MeshPhysicalMaterial({
 
 export function GuitarModel() {
 
-  const { scene } = useGLTF("/models/guitar.glb");
+  const { scene } = useGLTF("/models/guitar-optimized.glb");
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
   const centeredModel = useMemo(() => {
     const clone = scene.clone(true);
@@ -89,7 +89,7 @@ return (
 );
 }
 export function DrumModel() {
-  const { scene } = useGLTF("/models/drums.glb");
+  const { scene } = useGLTF("/models/drums-optimized.glb");
   const { viewport } = useThree();
   const groupRef = useRef<THREE.Group>(null);
 const rotationY = useRef(0);
@@ -178,7 +178,7 @@ const rotationY = useRef(0);
   );
 }
 
-useGLTF.preload("/models/guitar.glb");
+useGLTF.preload("/models/guitar-optimized.glb");
 
 export function GuitarPlaceholder() {
   const meshRef = useRef<THREE.Mesh>(null);
