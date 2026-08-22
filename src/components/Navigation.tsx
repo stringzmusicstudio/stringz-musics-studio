@@ -48,11 +48,14 @@ const handleScrollTo = (
   ];
 
   // Special anchors already handle their own positioning
-  const customAnchors = [
-    "#why-stringz-anchor",
-    "#experience-anchor",
-  ];
-
+const customAnchors = [
+  "#why-stringz-anchor",
+  "#experience-anchor",
+  "#gallery",
+  "#reviews",
+  "#visit",
+  "#book",
+];
   let offset = navbarHeight;
 
   if (
@@ -193,30 +196,43 @@ onClick={(event) => handleScrollTo(event, "#experience-anchor")}
         </button>
       </div>
 
-      {menuOpen && (
-        <div className="mx-5 mt-4 rounded-2xl border border-white/10 bg-black/95 p-5 backdrop-blur-xl lg:hidden">
-          <div className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={(event) => handleScrollTo(event, link.href)}
-                className="text-sm font-medium text-white/75"
-              >
-                {link.name}
-              </a>
-            ))}
+     {menuOpen && (
+  <div className="mx-5 mt-4 rounded-2xl border border-white/10 bg-black/95 p-5 backdrop-blur-xl lg:hidden">
+    <div className="flex flex-col gap-4">
+      {navLinks.map((link) => (
+        <div key={link.name}>
+          <a
+            href={link.href}
+            onClick={(event) => handleScrollTo(event, link.href)}
+            className="text-sm font-medium text-white/75"
+          >
+            {link.name}
+          </a>
 
+          {link.name === "Why Stringz" && (
             <a
-              href="#book"
-              onClick={(event) => handleScrollTo(event, "#book")}
-              className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-black"
+              href="#experience-anchor"
+              onClick={(event) =>
+                handleScrollTo(event, "#experience-anchor")
+              }
+              className="mt-3 block pl-4 text-sm font-medium text-yellow-400/85"
             >
-              Book Free Trial
+              Student Experience
             </a>
-          </div>
+          )}
         </div>
-      )}
+      ))}
+
+      <a
+        href="#book"
+        onClick={(event) => handleScrollTo(event, "#book")}
+        className="mt-2 rounded-full bg-gold px-5 py-3 text-center text-sm font-semibold text-black"
+      >
+        Book Free Trial
+      </a>
+    </div>
+  </div>
+)}
     </nav>
   );
 }

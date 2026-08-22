@@ -280,34 +280,116 @@ useEffect(() => {
   data-scroll-section
 >
    <div data-scroll-speed="0.25">
-     <p className="mb-8 text-base font-semibold tracking-[0.3em] text-yellow-400">
-        Guitar
-      </p>
+<p className="
+  mb-8
+  text-base
+  font-semibold
+  tracking-[0.3em]
+  text-yellow-400
 
-    <h2 className="mt-6 max-[767px]:max-w-full max-[767px]:whitespace-normal max-[767px]:break-words max-[767px]:text-[clamp(2.5rem,12vw,3.25rem)] whitespace-nowrap text-[4rem] font-bold leading-none tracking-[-0.04em] text-white">
+  max-[767px]:mb-3
+  max-[767px]:text-[0.8rem]
+">
+  GUITAR
+</p>
+
+<h2 className="
+  mt-6
+  whitespace-nowrap
+  text-[4rem]
+  font-bold
+  leading-none
+  tracking-[-0.04em]
+  text-white
+
+  max-[767px]:mt-2
+  max-[767px]:w-full
+  max-[767px]:max-w-none
+  max-[767px]:whitespace-nowrap
+  max-[767px]:text-[1.55rem]
+  max-[767px]:leading-none
+  max-[767px]:tracking-[-0.055em]
+">
   Craft Your Sound.
 </h2>
 
-     <p className="mt-8 mb-0 max-w-2xl text-lg leading-9 text-white/65">
-        Master chords, techniques, and songs through personalized guitar lessons designed for every skill level.
-      </p>
+<p className="
+  mt-8
+  mb-0
+  max-w-2xl
+  text-lg
+  leading-9
+  text-white/65
 
-      <a
-        href="#book"
-       className="mt-8 inline-flex w-60 items-center justify-center rounded-full border border-gold/50 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-gold/10"
-      >
-        Start with Guitar →
-      </a>
+  max-[767px]:mt-4
+  max-[767px]:max-w-full
+  max-[767px]:text-[0.9rem]
+  max-[767px]:leading-[1.7]
+">
+  Master chords, techniques, and songs through personalized guitar lessons designed for every skill level.
+</p>
+
+<a
+  href="#book"
+  className="
+    mt-8
+    inline-flex
+    w-60
+    items-center
+    justify-center
+    rounded-full
+    border
+    border-gold/50
+    px-6
+    py-3
+    text-sm
+    font-semibold
+    text-white
+    transition-colors
+    hover:bg-gold/10
+
+    max-[767px]:mt-4
+    max-[767px]:w-[170px]
+    max-[767px]:px-4
+    max-[767px]:py-2
+    max-[767px]:text-[0.72rem]
+  "
+>
+  Start with Guitar →
+</a>
     </div>
 
-  <div
+ <div
   data-scroll-model
-  className="relative max-[767px]:mt-5 h-[560px] w-full overflow-visible max-[767px]:h-[280px] max-[767px]:min-h-[280px] max-[767px]:translate-y-0 max-[767px]:scale-100 max-[767px]:overflow-visible min-[768px]:absolute min-[768px]:left-[calc(57%+3px)] min-[768px]:right-[calc(13%+3px)] min-[768px]:top-1/2 min-[768px]:h-[650px] min-[768px]:w-auto min-[768px]:-translate-y-1/2 min-[768px]:z-10"
+  className="
+    relative
+    h-[560px]
+    w-full
+    overflow-visible
+
+    max-[767px]:mt-2
+    max-[767px]:h-[250px]
+    max-[767px]:min-h-[250px]
+    max-[767px]:-translate-y-3
+    max-[767px]:scale-100
+    max-[767px]:overflow-visible
+
+    min-[768px]:absolute
+    min-[768px]:left-[calc(57%+3px)]
+    min-[768px]:right-[calc(13%+3px)]
+    min-[768px]:top-1/2
+    min-[768px]:h-[650px]
+    min-[768px]:w-auto
+    min-[768px]:-translate-y-1/2
+    min-[768px]:z-10
+  "
 >
   <div className="pointer-events-none absolute inset-0 max-[767px]:block min-[768px]:hidden">
     <div className="absolute left-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
+
     <div className="absolute right-[14%] top-1/2 h-[140px] w-[3px] -translate-y-1/2 bg-amber-100 shadow-[0_0_12px_#fef3c7,0_0_28px_#fbbf24,0_0_60px_#d97706]" />
   </div>
+
   <Scene />
 </div>
   </div>
@@ -492,33 +574,87 @@ useEffect(() => {
 {/* WHY STRINGZ */}
 <section
   id="why-stringz"
-  className="relative w-full overflow-hidden border-t border-white/5 bg-[#070605] px-8 pt-12 pb-10 md:px-16 lg:px-24"
+  className="
+    relative flex w-full items-center overflow-hidden
+    border-t border-white/5 bg-[#070605]
+    px-3
+    min-h-[calc(100svh-64px)]
+    py-10
+
+    md:block
+    md:min-h-0
+    md:px-16
+    md:pt-12
+    md:pb-10
+
+    lg:px-24
+  "
 >
   <div
     id="why-stringz-anchor"
-    className="absolute -top-10 left-0 h-px w-px"
+    className="
+      absolute left-0 h-px w-px
+      -top-[40px]
+      md:-top-10
+    "
   />
 
   <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(212,175,55,0.10),transparent_28%),radial-gradient(circle_at_80%_80%,rgba(212,175,55,0.06),transparent_30%)]" />
 
-  <div className="relative z-10 mx-auto max-w-7xl">
-  <div className="text-center">
-    <p className="text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">
-      Why Stringz
-    </p>
+  <div
+    className="
+      relative z-10 mx-auto w-full max-w-7xl
+    "
+  >
+    {/* HEADING */}
+    <div className="text-center">
+      <p
+        className="
+          text-[9px] font-semibold uppercase tracking-[0.35em] text-yellow-400
+          md:text-sm
+        "
+      >
+        Why Stringz
+      </p>
 
-   <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl">
-      Built for players.{" "}
-      <span className="text-yellow-400">Not just students.</span>
-    </h2>
+      <h2
+        className="
+          mt-2 text-[22px] font-bold leading-[1.08] text-white
+          md:mt-3 md:text-4xl md:leading-tight
+        "
+      >
+        Built for players.{" "}
+        <span className="text-yellow-400">Not just students.</span>
+      </h2>
 
-    <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-neutral-400">
-      Learn with structure, perform with confidence, and grow through a musical
-      journey designed around your pace.
-    </p>
-  </div>
+      <p
+        className="
+          mx-auto mt-2 max-w-[330px]
+          text-[10px] leading-[1.45] text-neutral-400
 
-    <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          md:mt-4
+          md:max-w-2xl
+          md:text-base
+          md:leading-7
+        "
+      >
+        Learn with structure, perform with confidence, and grow through a musical
+        journey designed around your pace.
+      </p>
+    </div>
+
+    {/* CARDS */}
+    <div
+      className="
+        mt-6 grid grid-cols-3 gap-3
+
+        md:mt-7
+        md:grid-cols-2
+        md:gap-4
+
+        lg:grid-cols-3
+      "
+    >
       {[
         {
           number: "01",
@@ -553,99 +689,233 @@ useEffect(() => {
       ].map((item) => (
         <article
           key={item.number}
-          className="group rounded-[28px] border border-yellow-500/20 bg-white/[0.025] p-6 transition duration-300 hover:-translate-y-2 hover:border-yellow-400/50 hover:bg-yellow-400/[0.04]"
+          className="
+            group flex min-h-[185px] flex-col
+            rounded-[18px]
+            border border-yellow-500/20
+            bg-white/[0.025]
+            p-3
+            transition duration-300
+
+            md:min-h-0
+            md:rounded-[28px]
+            md:p-6
+            md:hover:-translate-y-2
+            md:hover:border-yellow-400/50
+            md:hover:bg-yellow-400/[0.04]
+          "
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-yellow-500/40 text-sm font-semibold text-yellow-400">
+          <div
+            className="
+              flex h-7 w-7 items-center justify-center
+              rounded-full
+              border border-yellow-500/40
+              text-[9px]
+              font-semibold
+              text-yellow-400
+
+              md:h-12
+              md:w-12
+              md:text-sm
+            "
+          >
             {item.number}
           </div>
 
-          <h3 className="mt-5 text-xl font-semibold text-white">
+          <h3
+            className="
+              mt-3
+              text-[11px]
+              font-semibold
+              leading-[1.15]
+              text-white
+
+              md:mt-5
+              md:text-xl
+            "
+          >
             {item.title}
           </h3>
 
-          <p className="mt-3 text-sm leading-6 text-neutral-400">
+          <p
+            className="
+              mt-2
+              text-[7.5px]
+              leading-[1.45]
+              text-neutral-400
+
+              md:mt-3
+              md:text-sm
+              md:leading-6
+            "
+          >
             {item.text}
           </p>
         </article>
       ))}
     </div>
 
-   <div className="mt-6 grid gap-4 border-t border-white/10 pt-5 sm:grid-cols-2 lg:grid-cols-4">
+    {/* STATS */}
+    <div
+      className="
+        mt-6 grid grid-cols-4 gap-1
+        border-t border-white/10
+        pt-4
+
+        md:mt-6
+        md:grid-cols-2
+        md:gap-4
+        md:pt-5
+
+        lg:grid-cols-4
+      "
+    >
       {[
         ["2025", "Founded"],
         ["3", "Instruments"],
         ["Mon–Sat", "Classes"],
         ["Trinity", "Curriculum"],
       ].map(([value, label]) => (
-        <div key={label}>
-          <p className="text-3xl font-bold text-white md:text-4xl">
+        <div key={label} className="text-center md:text-left">
+          <p
+            className="
+              text-[13px] font-bold text-white
+              md:text-4xl
+            "
+          >
             {value}
           </p>
 
-          <p className="mt-2 text-sm uppercase tracking-[0.2em] text-neutral-500">
+          <p
+            className="
+              mt-1
+              text-[6px]
+              uppercase
+              tracking-[0.12em]
+              text-neutral-500
+
+              md:mt-2
+              md:text-sm
+              md:tracking-[0.2em]
+            "
+          >
             {label}
           </p>
         </div>
       ))}
     </div>
   </div>
-</section> 
+</section>
 
          {/* STUDENT EXPERIENCE */}
 <section
   id="experience"
-  className="relative flex min-h-[100vh] items-center overflow-hidden border-t border-white/5 bg-[#120c05] px-8 py-10 md:px-16 lg:px-24"
+ className="
+  relative flex min-h-[100svh] items-center overflow-hidden
+  border-t border-white/5 bg-[#120c05]
+  px-3 py-6
+
+  md:min-h-[100vh]
+  md:px-16 md:py-10
+
+  lg:px-24
+"
 >
+  {/* NAVBAR ANCHOR */}
   <div
-    id="experience-anchor"
-    className="absolute -top-10 left-0 h-px w-px"
-  />
+  id="experience-anchor"
+  className="
+    absolute left-0 top-0 h-px w-px
+  "
+/>
 
   {/* BACKGROUND */}
-<div className="pointer-events-none absolute inset-0 overflow-hidden">
+  <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
-  {/* Dark warm base */}
-  <div className="absolute inset-0 bg-[linear-gradient(180deg,#080706_0%,#0d0a07_48%,#100b06_100%)]" />
+    {/* Dark warm base */}
+    <div className="absolute inset-0 bg-[linear-gradient(180deg,#080706_0%,#0d0a07_48%,#100b06_100%)]" />
 
-  {/* Main subtle amber glow behind cards */}
-  <div className="absolute bottom-[-210px] left-1/2 h-[500px] w-[950px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[150px]" />
+    {/* Main amber glow */}
+    <div className="absolute bottom-[-210px] left-1/2 h-[500px] w-[950px] -translate-x-1/2 rounded-full bg-amber-500/10 blur-[150px]" />
 
-  {/* Very soft warmth in center */}
-  <div className="absolute left-1/2 top-[55%] h-[360px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-500/[0.035] blur-[130px]" />
+    {/* Center warmth */}
+    <div className="absolute left-1/2 top-[55%] h-[360px] w-[650px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-500/[0.035] blur-[130px]" />
 
-  {/* Tiny warm atmosphere behind heading */}
-  <div className="absolute left-1/2 top-[18%] h-[260px] w-[700px] -translate-x-1/2 rounded-full bg-amber-500/[0.025] blur-[140px]" />
+    {/* Heading atmosphere */}
+    <div className="absolute left-1/2 top-[18%] h-[260px] w-[700px] -translate-x-1/2 rounded-full bg-amber-500/[0.025] blur-[140px]" />
 
-  {/* Soft edge darkness */}
-  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_45%,rgba(0,0,0,0.68)_100%)]" />
+    {/* Edge darkness */}
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_45%,rgba(0,0,0,0.68)_100%)]" />
 
-  {/* Bottom stage line */}
-  <div className="absolute bottom-0 left-1/2 h-px w-[68%] -translate-x-1/2 bg-gradient-to-r from-transparent via-yellow-400/25 to-transparent" />
+    {/* Bottom stage line */}
+    <div className="absolute bottom-0 left-1/2 h-px w-[68%] -translate-x-1/2 bg-gradient-to-r from-transparent via-yellow-400/25 to-transparent" />
+  </div>
 
-</div>
+  {/* CONTENT */}
+ <div
+  className="
+    relative z-10 mx-auto w-full max-w-7xl
+    translate-y-0
+    md:translate-y-0
+  "
+>
 
-  <div className="relative z-10 mx-auto w-full max-w-7xl">
+    {/* HEADING */}
     <div className="mx-auto max-w-5xl text-center">
 
-      <p className="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-yellow-400">
+      <p
+        className="
+          mb-2 text-[9px] font-semibold uppercase
+          tracking-[0.35em] text-yellow-400
+
+          md:mb-3 md:text-sm
+        "
+      >
         Student Experience
       </p>
 
-      <h2 className="text-3xl font-bold leading-tight text-white md:text-4xl lg:text-[2.75rem]">
+      <h2
+        className="
+          mx-auto max-w-[350px]
+          text-[23px] font-bold leading-[1.08] text-white
+
+          md:max-w-none md:text-4xl md:leading-tight
+          lg:text-[2.75rem]
+        "
+      >
         From your first lesson{" "}
         <span className="text-yellow-400">
           to your first performance.
         </span>
       </h2>
 
-      <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-neutral-400">
-        Every student&apos;s journey at Stringz is carefully planned—from your first free
-        trial to performing confidently on stage through structured learning and
-        consistent practice.
+      <p
+        className="
+          mx-auto mt-3 max-w-[345px]
+          text-[10px] leading-[1.55] text-neutral-400
+
+          md:mt-4 md:max-w-3xl
+          md:text-base md:leading-7
+        "
+      >
+        Every student&apos;s journey at Stringz is carefully planned—from your
+        first free trial to performing confidently on stage through structured
+        learning and consistent practice.
       </p>
     </div>
 
-    <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+    {/* CARDS */}
+    <div
+      className="
+        mt-7 grid grid-cols-2 gap-3
+
+        md:mt-8
+        md:grid-cols-2
+        md:gap-4
+
+        lg:grid-cols-4
+      "
+    >
       {[
         {
           number: "01",
@@ -670,17 +940,62 @@ useEffect(() => {
       ].map((step) => (
         <article
           key={step.number}
-          className="group rounded-[28px] border border-yellow-500/25 bg-black/25 p-6 backdrop-blur-[2px] transition duration-300 hover:-translate-y-2 hover:border-yellow-400/55 hover:bg-yellow-400/[0.055] hover:shadow-[0_18px_60px_rgba(245,158,11,0.10)]"
+          className="
+            group flex min-h-[195px] flex-col
+            rounded-[20px]
+            border border-yellow-500/25
+            bg-black/25
+            p-4
+            backdrop-blur-[2px]
+
+            transition duration-300
+
+            md:min-h-0
+            md:rounded-[28px]
+            md:p-6
+
+            md:hover:-translate-y-2
+            md:hover:border-yellow-400/55
+            md:hover:bg-yellow-400/[0.055]
+            md:hover:shadow-[0_18px_60px_rgba(245,158,11,0.10)]
+          "
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-full border border-yellow-500/45 bg-black/10 text-sm font-semibold text-yellow-400">
+          {/* NUMBER */}
+          <div
+            className="
+              flex h-8 w-8 shrink-0 items-center justify-center
+              rounded-full
+              border border-yellow-500/45
+              bg-black/10
+              text-[9px] font-semibold text-yellow-400
+
+              md:h-12 md:w-12 md:text-sm
+            "
+          >
             {step.number}
           </div>
 
-          <h3 className="mt-5 text-xl font-semibold text-white">
+          {/* TITLE */}
+          <h3
+            className="
+              mt-3 text-[13px] font-semibold
+              leading-[1.15] text-white
+
+              md:mt-5 md:text-xl
+            "
+          >
             {step.title}
           </h3>
 
-          <p className="mt-3 text-sm leading-6 text-neutral-400">
+          {/* DESCRIPTION */}
+          <p
+            className="
+              mt-2 text-[9px]
+              leading-[1.5] text-neutral-400
+
+              md:mt-3 md:text-sm md:leading-6
+            "
+          >
             {step.text}
           </p>
         </article>
@@ -692,7 +1007,14 @@ useEffect(() => {
 {/* GALLERY */}
 <section
   id="gallery"
-  className="relative overflow-hidden border-t border-white/5 bg-[#050505] px-8 py-16 md:px-16 lg:px-24"
+  className="
+    relative overflow-hidden border-t border-white/5 bg-[#050505]
+    px-4 pt-[88px] pb-16
+
+    md:px-16 md:py-16
+
+    lg:px-24
+  "
 >
  {/* GALLERY BACKGROUND */}
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -778,21 +1100,50 @@ useEffect(() => {
 
   <div className="relative z-10 mx-auto max-w-6xl">
 
-    {/* Heading */}
-    <div className="text-center">
-      <p className="mb-2 text-xs font-semibold uppercase tracking-[0.35em] text-yellow-400">
-        Gallery
-      </p>
+   {/* Heading */}
+<div className="mt-6 text-center md:mt-0">
+  <p
+    className="
+      mb-3
+      text-[10px]
+      font-semibold
+      uppercase
+      tracking-[0.35em]
+      text-yellow-400
 
-      <h2 className="text-4xl font-bold leading-tight tracking-[-0.04em] text-white md:text-5xl">
-        Moments at <span className="text-yellow-400">Stringz.</span>
-      </h2>
+      md:mb-2
+      md:text-xs
+    "
+  >
+    Gallery
+  </p>
 
-      <p className="mx-auto mt-3 text-base leading-7 text-neutral-400">
-        A look inside our lessons, instruments, and the students who make the
-        studio come alive.
-      </p>
-    </div>
+  <h2
+    className="
+      text-[32px]
+      font-bold
+      leading-tight
+      tracking-[-0.04em]
+      text-white
+
+      md:text-5xl
+    "
+  >
+    Moments at <span className="text-yellow-400">Stringz.</span>
+  </h2>
+
+  <p
+    className="
+      mx-auto mt-3
+      text-base
+      leading-7
+      text-neutral-400
+    "
+  >
+    A look inside our lessons, instruments, and the students who make the
+    studio come alive.
+  </p>
+</div>
 
     {/* STACKED GALLERY CARDS */}
     <div className="mt-8 grid gap-x-8 gap-y-10 md:grid-cols-2">
@@ -932,87 +1283,143 @@ useEffect(() => {
        {/* REVIEWS */}
 <section
   id="reviews"
- className="relative min-h-[calc(100vh-68px)] overflow-hidden border-t border-white/5 bg-black px-8 py-12 md:px-16 lg:px-24"
+  className="
+    relative min-h-[100svh] overflow-hidden
+    border-t border-white/5 bg-black
+    px-4 pt-[88px] pb-10
+
+    md:min-h-[100vh]
+    md:px-16 md:py-12
+
+    lg:px-24
+  "
 >
- {/* PREMIUM REVIEW BACKGROUND */}
-<div className="pointer-events-none absolute inset-0 overflow-hidden">
+  {/* PREMIUM REVIEW BACKGROUND */}
+  <div className="pointer-events-none absolute inset-0 overflow-hidden">
 
-  {/* Warm charcoal base */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background:
-        "linear-gradient(180deg, #050505 0%, #0b0804 48%, #050505 100%)",
-    }}
-  />
+    <div
+      className="absolute inset-0"
+      style={{
+        background:
+          "linear-gradient(180deg, #050505 0%, #0b0804 48%, #050505 100%)",
+      }}
+    />
 
-  {/* LARGE CENTRAL GOLDEN BLOOM */}
-  <div
-    className="absolute left-1/2 top-[36%] h-[650px] w-[1100px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[160px]"
-    style={{
-      background:
-        "radial-gradient(ellipse, rgba(205,135,35,0.16) 0%, rgba(135,75,15,0.075) 38%, transparent 72%)",
-    }}
-  />
+    <div
+      className="absolute left-1/2 top-[36%] h-[650px] w-[1100px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[160px]"
+      style={{
+        background:
+          "radial-gradient(ellipse, rgba(205,135,35,0.16) 0%, rgba(135,75,15,0.075) 38%, transparent 72%)",
+      }}
+    />
 
-  {/* LEFT OVERHEAD SPOTLIGHT */}
-  <div
-    className="absolute left-[27%] top-[-190px] h-[600px] w-[260px] rotate-[5deg] blur-[75px]"
-    style={{
-      background:
-        "linear-gradient(180deg, rgba(255,210,115,0.16) 0%, rgba(200,125,30,0.065) 45%, transparent 88%)",
-    }}
-  />
+    <div
+      className="absolute left-[27%] top-[-190px] h-[600px] w-[260px] rotate-[5deg] blur-[75px]"
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(255,210,115,0.16) 0%, rgba(200,125,30,0.065) 45%, transparent 88%)",
+      }}
+    />
 
-  {/* RIGHT OVERHEAD SPOTLIGHT */}
-  <div
-    className="absolute right-[25%] top-[-190px] h-[600px] w-[260px] -rotate-[5deg] blur-[75px]"
-    style={{
-      background:
-        "linear-gradient(180deg, rgba(255,210,115,0.13) 0%, rgba(200,125,30,0.05) 45%, transparent 88%)",
-    }}
-  />
+    <div
+      className="absolute right-[25%] top-[-190px] h-[600px] w-[260px] -rotate-[5deg] blur-[75px]"
+      style={{
+        background:
+          "linear-gradient(180deg, rgba(255,210,115,0.13) 0%, rgba(200,125,30,0.05) 45%, transparent 88%)",
+      }}
+    />
 
-  {/* GLOW DIRECTLY BEHIND REVIEW CARDS */}
-  <div
-    className="absolute bottom-[7%] left-1/2 h-[330px] w-[1050px] -translate-x-1/2 rounded-full blur-[150px]"
-    style={{
-      background:
-        "radial-gradient(ellipse, rgba(180,105,20,0.09) 0%, transparent 70%)",
-    }}
-  />
+    <div
+      className="absolute bottom-[7%] left-1/2 h-[330px] w-[1050px] -translate-x-1/2 rounded-full blur-[150px]"
+      style={{
+        background:
+          "radial-gradient(ellipse, rgba(180,105,20,0.09) 0%, transparent 70%)",
+      }}
+    />
 
-  {/* SUBTLE GOLD DUST */}
-  <div
-    className="absolute inset-0 opacity-[0.10]"
-    style={{
-      backgroundImage:
-        "radial-gradient(circle, rgba(255,205,90,0.32) 1px, transparent 1px)",
-      backgroundSize: "58px 58px",
-    }}
-  />
+    <div
+      className="absolute inset-0 opacity-[0.10]"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle, rgba(255,205,90,0.32) 1px, transparent 1px)",
+        backgroundSize: "58px 58px",
+      }}
+    />
 
-  {/* DARK EDGE VIGNETTE */}
-  <div
-    className="absolute inset-0"
-    style={{
-      background:
-        "radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.30) 62%, rgba(0,0,0,0.82) 100%)",
-    }}
-  />
+    <div
+      className="absolute inset-0"
+      style={{
+        background:
+          "radial-gradient(ellipse at center, transparent 35%, rgba(0,0,0,0.30) 62%, rgba(0,0,0,0.82) 100%)",
+      }}
+    />
 
-  {/* TOP TRANSITION */}
-  <div className="absolute inset-x-0 top-0 h-[100px] bg-gradient-to-b from-black/50 to-transparent" />
+    <div className="absolute inset-x-0 top-0 h-[100px] bg-gradient-to-b from-black/50 to-transparent" />
+    <div className="absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-t from-black/55 to-transparent" />
+  </div>
 
-  {/* BOTTOM TRANSITION */}
-  <div className="absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-t from-black/55 to-transparent" />
+ <div
+  className="
+    relative z-10 mx-auto max-w-7xl
+    translate-y-[28px]
 
-</div>
+    md:translate-y-[70px]
 
-  <div className="relative z-10 mx-auto max-w-7xl">
-    <div className="grid items-center gap-5 lg:grid-cols-[220px_1fr_220px]">
+    lg:translate-y-[70px]
+  "
+>
 
-      {/* LEFT RATING */}
+    {/* MOBILE HEADING */}
+    <div className="text-center md:hidden">
+      <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.35em] text-yellow-400">
+        Reviews
+      </p>
+
+      <h2 className="text-[30px] font-bold leading-[1.05] tracking-[-0.04em] text-white">
+        Loved by{" "}
+        <span className="text-yellow-400">
+          students & parents.
+        </span>
+      </h2>
+
+      <p className="mx-auto mt-3 max-w-[330px] text-[11px] leading-[1.55] text-neutral-400">
+        Real experiences from students and families who have been part of the
+        Stringz journey.
+      </p>
+    </div>
+
+    {/* MOBILE STATS */}
+    <div className="mt-5 grid grid-cols-2 gap-3 md:hidden">
+
+      <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-4 text-center">
+        <p className="text-[28px] font-semibold text-yellow-400">
+          5.0★
+        </p>
+
+        <p className="mt-1 text-[8px] uppercase tracking-[0.22em] text-neutral-500">
+          Google Rated
+        </p>
+      </div>
+
+      <a
+        href="https://www.google.com/search?q=Stringz+Music+Studio#lrd=0x3bae1112b53a5b1d:0x6cd9339f14c03bff,1"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-[20px] border border-white/10 bg-white/[0.03] p-4 text-center"
+      >
+        <p className="text-[28px] font-semibold text-yellow-400">
+          100+
+        </p>
+
+        <p className="mt-1 text-[8px] uppercase tracking-[0.22em] text-neutral-500">
+          Google Reviews
+        </p>
+      </a>
+    </div>
+
+    {/* DESKTOP HEADER */}
+    <div className="hidden items-center gap-5 md:grid lg:grid-cols-[220px_1fr_220px]">
+
       <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5 text-center">
         <p className="text-5xl font-semibold text-yellow-400">
           5.0★
@@ -1023,7 +1430,6 @@ useEffect(() => {
         </p>
       </div>
 
-      {/* CENTER HEADING */}
       <div className="text-center">
         <p className="mb-2 text-xs font-semibold uppercase tracking-[0.35em] text-yellow-400">
           Reviews
@@ -1042,7 +1448,6 @@ useEffect(() => {
         </p>
       </div>
 
-      {/* RIGHT REVIEW COUNT */}
       <a
         href="https://www.google.com/search?q=Stringz+Music+Studio#lrd=0x3bae1112b53a5b1d:0x6cd9339f14c03bff,1"
         target="_blank"
@@ -1064,7 +1469,18 @@ useEffect(() => {
     </div>
 
     {/* REVIEW CARDS */}
-    <div className="mx-auto mt-7 grid max-w-7xl gap-5 md:grid-cols-2 xl:grid-cols-4">
+    <div
+      className="
+        mx-auto mt-5 grid grid-cols-2 gap-3
+
+        md:mt-7
+        md:max-w-7xl
+        md:gap-5
+        md:grid-cols-2
+
+        xl:grid-cols-4
+      "
+    >
       {[
         {
           quote:
@@ -1093,22 +1509,55 @@ useEffect(() => {
       ].map((review) => (
         <article
           key={`${review.name}-${review.role}`}
-          className="flex min-h-[285px] flex-col rounded-[20px] border border-white/10 bg-white/[0.03] p-5 transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400/30 hover:bg-white/[0.05] hover:shadow-[0_0_30px_rgba(250,204,21,0.12)]"
+          className="
+            flex min-h-[185px] flex-col
+            rounded-[18px]
+            border border-white/10
+            bg-white/[0.03]
+            p-3
+
+            md:min-h-[285px]
+            md:rounded-[20px]
+            md:p-5
+            md:transition-all
+            md:duration-500
+            md:hover:-translate-y-2
+            md:hover:border-yellow-400/30
+            md:hover:bg-white/[0.05]
+            md:hover:shadow-[0_0_30px_rgba(250,204,21,0.12)]
+          "
         >
-          <p className="text-2xl text-yellow-400">
+          <p className="text-[15px] text-yellow-400 md:text-2xl">
             ★★★★★
           </p>
 
-          <p className="mt-3 text-sm leading-6 text-neutral-300">
+          <p
+            className="
+              mt-2
+              overflow-hidden
+              text-[9px]
+              leading-[1.5]
+              text-neutral-300
+              [display:-webkit-box]
+              [-webkit-box-orient:vertical]
+              [-webkit-line-clamp:6]
+
+              md:mt-3
+              md:block
+              md:overflow-visible
+              md:text-sm
+              md:leading-6
+            "
+          >
             “{review.quote}”
           </p>
 
-          <div className="mt-auto border-t border-white/10 pt-3">
-            <p className="text-sm font-semibold text-yellow-300">
+          <div className="mt-auto border-t border-white/10 pt-2 md:pt-3">
+            <p className="text-[9px] font-semibold text-yellow-300 md:text-sm">
               {review.name}
             </p>
 
-            <p className="mt-1 text-sm uppercase tracking-[0.2em] text-neutral-500">
+            <p className="mt-1 text-[7px] uppercase tracking-[0.15em] text-neutral-500 md:text-sm md:tracking-[0.2em]">
               {review.role}
             </p>
           </div>
@@ -1121,7 +1570,16 @@ useEffect(() => {
         {/* VISIT US */}
 <section
   id="visit"
-  className="relative overflow-hidden border-t border-white/5 bg-[#070605] px-8 py-6 md:px-16 lg:px-24"
+  className="
+    relative min-h-[100vh] overflow-hidden
+    border-t border-white/5 bg-[#070605]
+
+    px-4 pt-[92px] pb-8
+
+    md:px-16 md:pt-[110px] md:pb-10
+
+    lg:px-24
+  "
 >
   {/* VISIT BACKGROUND */}
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -1196,7 +1654,7 @@ useEffect(() => {
   <div className="absolute inset-x-0 bottom-0 h-[100px] bg-gradient-to-t from-black/50 to-transparent" />
 
 </div>
-  <div className="relative z-10 mx-auto max-w-7xl">
+  <div className="relative z-10 mx-auto max-w-7xl md:-translate-y-[18px]">
 
     {/* HEADING */}
     <div className="mx-auto max-w-4xl text-center">
@@ -1378,7 +1836,16 @@ useEffect(() => {
 {/* BOOK FREE TRIAL */}
 <section
   id="book"
-  className="relative overflow-hidden border-t border-white/5 bg-[#070605] px-8 py-7 md:px-16 lg:px-24"
+  className="
+    relative min-h-[100vh] overflow-hidden
+    border-t border-white/5 bg-[#070605]
+
+    px-4 pt-[92px] pb-8
+
+    md:px-16 md:pt-[110px] md:pb-10
+
+    lg:px-24
+  "
 >
   {/* BOOK FREE TRIAL BACKGROUND */}
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
@@ -1460,7 +1927,7 @@ useEffect(() => {
   <div className="absolute inset-x-0 bottom-0 h-[100px] bg-gradient-to-t from-black/75 to-transparent" />
 
 </div>
-  <div className="relative z-10 mx-auto max-w-5xl">
+  <div className="relative z-10 mx-auto max-w-5xl md:-translate-y-[18px]">
 
     {/* HEADING */}
     <div className="text-center">
