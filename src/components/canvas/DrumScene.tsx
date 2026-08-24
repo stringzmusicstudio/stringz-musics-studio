@@ -12,17 +12,21 @@ export default function DrumScene() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
 
     const element = containerRef.current;
     if (!element) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShouldRender(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setShouldRender(true);
+          observer.disconnect();
+        }
       },
       {
-        rootMargin: "700px 0px",
+        rootMargin: mobile ? "300px 0px" : "600px 0px",
         threshold: 0,
       }
     );
@@ -44,6 +48,7 @@ export default function DrumScene() {
             powerPreference: "high-performance",
             preserveDrawingBuffer: false,
           }}
+          frameloop="always"
           style={{
             width: "100%",
             height: "100%",

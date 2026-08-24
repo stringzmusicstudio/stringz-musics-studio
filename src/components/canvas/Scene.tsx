@@ -12,18 +12,23 @@ export default function Scene() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
 
     const element = containerRef.current;
     if (!element) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShouldRender(entry.isIntersecting);
+        // Load once when the section gets close.
+        // DO NOT destroy the WebGL canvas after it loads.
+        if (entry.isIntersecting) {
+          setShouldRender(true);
+          observer.disconnect();
+        }
       },
       {
-        // Start loading BEFORE the guitar enters the screen.
-        rootMargin: "700px 0px",
+        rootMargin: mobile ? "300px 0px" : "600px 0px",
         threshold: 0,
       }
     );
@@ -45,6 +50,7 @@ export default function Scene() {
             powerPreference: "high-performance",
             preserveDrawingBuffer: false,
           }}
+          frameloop="always"
           style={{
             width: "100%",
             height: "100%",

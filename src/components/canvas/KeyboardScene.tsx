@@ -4,7 +4,6 @@ import { Suspense, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import Lighting from "./Lighting";
 import { KeyboardModel } from "./Instruments";
-
 export default function KeyboardScene() {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -12,17 +11,21 @@ export default function KeyboardScene() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
+    const mobile = window.innerWidth < 768;
+    setIsMobile(mobile);
 
     const element = containerRef.current;
     if (!element) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setShouldRender(entry.isIntersecting);
+        if (entry.isIntersecting) {
+          setShouldRender(true);
+          observer.disconnect();
+        }
       },
       {
-        rootMargin: "700px 0px",
+        rootMargin: mobile ? "250px 0px" : "600px 0px",
         threshold: 0,
       }
     );
@@ -45,6 +48,7 @@ export default function KeyboardScene() {
             powerPreference: "high-performance",
             preserveDrawingBuffer: false,
           }}
+          frameloop="always"
           style={{
             width: "100%",
             height: "100%",
@@ -53,9 +57,9 @@ export default function KeyboardScene() {
         >
           <Lighting isLowPerformance={isMobile} />
 
-          <Suspense fallback={null}>
-            <KeyboardModel />
-          </Suspense>
+         <Suspense fallback={null}>
+  <KeyboardModel />
+</Suspense>
         </Canvas>
       )}
     </div>
